@@ -94,15 +94,14 @@ def match_nul(gril):
 from random import*
 def coup_aleatoire(gril ,j):
     p = randint(0,6)
-    u = Jouer (gril, j, col)
+    u = Jouer (gril, j, p)
     return u
 
 # Programme principal
 
 L = grille_vide()
 affiche(L)
-n = input("Quelle colonne jouer vous ?")
-n =int(n)
+n = int(input("Quelle colonne jouer vous ?"))
 
 L = jouer(L,1,n)
 affiche(L)
