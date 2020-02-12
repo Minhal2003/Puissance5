@@ -1,11 +1,11 @@
 def vert(gril,j,lig,col):
-    verite=0
+    p=0
             if lig>3:
             return False
     for i in range(lig+1,lig+3):
         if gril[i][col]!=j:
-            verite=1
-    if verite==1:
+            p=1
+    if p==1:
         return False
     else:
         return True
